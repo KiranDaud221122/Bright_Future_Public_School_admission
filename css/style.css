@@ -1,0 +1,374 @@
+﻿
+:root {
+    --primary-color: #1a4f72;
+    --secondary-color: #f8f9fa;
+    --accent-color: #ffc107;
+    --light-blue: #e3f2fd;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Custom Navbar */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: white !important;
+    font-size: 1.8rem;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 500;
+    margin: 0 8px;
+    transition: all 0.3s;
+    position: relative;
+}
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+        color: white !important;
+    }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent-color);
+        }
+
+.school-info {
+    color: white;
+    font-size: 0.9rem;
+    padding: 0 15px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(26, 79, 114, 0.8), rgba(26, 79, 114, 0.9)), url('https://hillpost.in/wp-content/uploads/2022/03/Modern-School-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn-apply {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+    .btn-apply:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        background-color: #ffca2c;
+    }
+
+/* Features Section */
+.features-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    position: relative;
+}
+
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: var(--accent-color);
+    }
+
+.feature-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+    margin-bottom: 30px;
+    border: none;
+    height: 100%;
+}
+
+    .feature-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+
+.feature-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.feature-content {
+    padding: 25px;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Admission Form */
+.form-section {
+    background-color: var(--light-blue);
+    padding: 60px 0;
+}
+
+.form-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.form-title {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #495057;
+    margin-left: 1.5rem;
+}
+
+}
+
+.required::after {
+    content: " *";
+    color: #dc3545;
+}
+
+/* Fees Section */
+.fees-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.fees-table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+    .fees-table thead {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    .fees-table th, .fees-table td {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .fees-table tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
+    }
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+    .footer-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: var(--accent-color);
+    }
+
+.footer-links a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+    transition: all 0.3s;
+}
+
+    .footer-links a:hover {
+        color: white;
+        transform: translateX(5px);
+    }
+
+.contact-info {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    margin-right: 15px;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .school-info {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 70px 0;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .form-container {
+        padding: 25px;
+    }
+
+    .feature-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .school-info {
+        border: none;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Zoom effect on feature card images */
+.feature-card {
+    overflow: hidden;
+}
+
+    .feature-card img {
+        transition: transform 0.4s ease;
+    }
+
+    .feature-card:hover img {
+        transform: scale(1.1);
+    }
+
+
+/* Form Styling */
+.form-section .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+.form-section .card-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.seat-info {
+    background-color: #e8f4f8;
+    border-left: 4px solid #17a2b8;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.seat-full {
+    background-color: #f8d7da;
+    border-left: 4px solid #dc3545;
+}
+
+.age-display {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    padding: 6px 12px;
+    border-radius: 4px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+</sty
